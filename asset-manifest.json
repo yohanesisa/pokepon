@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pokemon-gashapon/static/css/main.b3b40603.chunk.css",
-    "main.js": "/pokemon-gashapon/static/js/main.b7b22a28.chunk.js",
-    "main.js.map": "/pokemon-gashapon/static/js/main.b7b22a28.chunk.js.map",
+    "main.js": "/pokemon-gashapon/static/js/main.85be8e47.chunk.js",
+    "main.js.map": "/pokemon-gashapon/static/js/main.85be8e47.chunk.js.map",
     "runtime-main.js": "/pokemon-gashapon/static/js/runtime-main.0c2b9802.js",
     "runtime-main.js.map": "/pokemon-gashapon/static/js/runtime-main.0c2b9802.js.map",
     "static/js/2.5122bce6.chunk.js": "/pokemon-gashapon/static/js/2.5122bce6.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0c2b9802.js",
     "static/js/2.5122bce6.chunk.js",
     "static/css/main.b3b40603.chunk.css",
-    "static/js/main.b7b22a28.chunk.js"
+    "static/js/main.85be8e47.chunk.js"
   ]
 }
