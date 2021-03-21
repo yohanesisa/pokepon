@@ -30,7 +30,6 @@ module.exports = {
         "poke-red": "#f96655",
         "poke-white": "#ffffff",
         "poke-yellow": "#fece4a",
-
         "type-bug": "#92BC2C",
         "type-dark": "#595761",
         "type-dragon": "#0C69C8",
