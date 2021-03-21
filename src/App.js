@@ -1,9 +1,8 @@
-import { useState } from "react";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
-import { MyPokemonContext } from "./contexts/MyPokemonContext";
+import { MyPokemonProvider } from "./contexts/MyPokemonContext";
 
 import Header from "./components/core/Header";
 import Footer from "./components/core/Footer";
@@ -16,8 +15,6 @@ function App() {
     cache: new InMemoryCache(),
     uri: "https://graphql-pokeapi.vercel.app/api/graphql",
   });
-
-  const [myPokemon, setMyPokemon] = useState([]);
 
   return (
     <ApolloProvider client={client}>
@@ -32,11 +29,11 @@ function App() {
 
           <Header></Header>
 
-          <MyPokemonContext.Provider value={{ myPokemon, setMyPokemon }}>
+          <MyPokemonProvider>
             <Route path="/" exact component={Welcome} />
             <Route path="/pokedex" component={Pokedex} />
             <Route path="/my-pokemon" component={MyPokemon} />
-          </MyPokemonContext.Provider>
+          </MyPokemonProvider>
 
           <Footer></Footer>
         </div>

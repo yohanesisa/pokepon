@@ -13,7 +13,7 @@ const PokeCatch = ({ pokemon, onClose, onCatch }) => {
 
     setTimeout(() => {
       setCatchLoading(false);
-    }, 3000);
+    }, 0);
   }, []);
 
   const catchPokemon = () => {
@@ -22,7 +22,7 @@ const PokeCatch = ({ pokemon, onClose, onCatch }) => {
       setCatchLoading(false);
     }, 2000);
 
-    setCatchStatus(Math.random() < 0.5);
+    setCatchStatus(Math.random() < 1);
   };
 
   const savePokemon = () => {
@@ -42,6 +42,8 @@ const PokeCatch = ({ pokemon, onClose, onCatch }) => {
           image: pokemon.pokemon.sprites.front_default,
           nickname: nickname,
         };
+
+        console.log([newPokemon, ...myPokemon]);
 
         setMyPokemon([newPokemon, ...myPokemon]);
 
