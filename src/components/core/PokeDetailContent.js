@@ -68,16 +68,16 @@ const PokeDetailContent = ({ loading, pokemon, nickname, origin, onClose, onCatc
                       </div>
                       <div className="bg-white rounded-2xl -mt-10 px-5 py-10">
                         <div className="pt-0 pb-5">
-                          <div className="mb-2 text-center flex justify-center">
+                          <div className="mb-2 text-center flex flex-wrap justify-center">
                             {pokemon.pokemon.types.map((type, index) => (
                               <div
                                 key={index}
-                                className={`m-2 bg-poke-green px-3 py-1 rounded-full flex bg-opacity-90 bg-type-${type.type.name}`}
+                                className={`m-1 bg-poke-green px-3 py-1 rounded-full flex bg-opacity-90 bg-type-${type.type.name}`}
                               >
                                 <img
                                   src={`icons/${type.type.name}.svg`}
                                   alt={type.type.name}
-                                  className="w-3"
+                                  className="w-3 h-3"
                                 ></img>
                                 <p
                                   className={`font-lato text-xs font-bold text-white capitalize ml-1`}
