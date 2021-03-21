@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Press+Start+2P&family=Signika&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+    @apply font-signika;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-signika;
+  }
+  h3 {
+    @apply text-xl;
+    @apply font-signika;
+  }
+  h4 {
+    @apply text-lg;
+    @apply font-signika;
+  }
+  h5 {
+    @apply text-base;
+    @apply font-signika;
+  }
+  h6 {
+    @apply text-sm;
+    @apply font-signika;
+  }
+  p {
+    @apply text-sm;
+    @apply font-lato text-gray-900;
+  }
+  input{
+    @apply font-lato text-gray-900;
+  }
+  input:focus{
+      outline: none;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn {
+  @apply px-8 py-3;
+  @apply rounded-full;
+  @apply bg-poke-blue;
+  @apply font-signika text-white text-sm;
+  @apply transition duration-300 transform hover:-translate-y-1;
+}
+
+.btn-red{
+  @apply bg-poke-red;
+}
+
+.pagination {
+  @apply text-base;
+  @apply font-signika;
+
+  display: inline-flex;
+}
+
+.pagination li {
+  display: inline-flex;
+  margin: 10px;
+}
+
+.pagination li.active {
+  @apply text-poke-red;
 }

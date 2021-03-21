@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+
+import { MyPokemonContext } from "./contexts/MyPokemonContext";
+
+import Header from "./components/core/Header";
+import Footer from "./components/core/Footer";
+import Welcome from "./components/pages/Welcome";
+import Pokedex from "./components/pages/Pokedex";
+import MyPokemon from "./components/pages/MyPokemon";
 
 function App() {
+  const client = new ApolloClient({
+    cache: new InMemoryCache(),
+    uri: "https://graphql-pokeapi.vercel.app/api/graphql",
+  });
+
+  const [myPokemon, setMyPokemon] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ApolloProvider client={client}>
+      <Router>
+        <div
+          className="App bg-auto bg-center bg-repeat bg-fixed"
+          style={{
+            backgroundImage: `url("/images/poke-ball-seamless-bg.jpg")`,
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Toaster />
+
+          <Header></Header>
+
+          <MyPokemonContext.Provider value={{ myPokemon, setMyPokemon }}>
+            <Route path="/" exact component={Welcome} />
+            <Route path="/pokedex" component={Pokedex} />
+            <Route path="/my-pokemon" component={MyPokemon} />
+          </MyPokemonContext.Provider>
+
+          <Footer></Footer>
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 
