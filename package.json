@@ -1,4 +1,5 @@
 {
+  "homepage": "http://yohanesisa.github.io/pokemon-gashapon",
   "name": "pokemon-gashapon",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -46,6 +49,7 @@
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.3",
     "autoprefixer": "^9.8.6",
+    "gh-pages": "^3.1.0",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   }

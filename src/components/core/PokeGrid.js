@@ -13,7 +13,7 @@ const PokeGrid = ({ pokemons, origin, loading }) => {
         {loading ? (
           <div className="absolute bg-white bg-opacity-90 w-full h-full loading flex items-center justify-center">
             <img
-              src="/images/poke-ball-icon.svg"
+              src="images/poke-ball-icon.svg"
               alt="header-icon"
               className="w-7 mx-32 animate-spin"
             />

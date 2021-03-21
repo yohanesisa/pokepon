@@ -13,7 +13,7 @@ const PokeCatch = ({ pokemon, onClose, onCatch }) => {
 
     setTimeout(() => {
       setCatchLoading(false);
-    }, 0);
+    }, 3000);
   }, []);
 
   const catchPokemon = () => {
@@ -22,17 +22,17 @@ const PokeCatch = ({ pokemon, onClose, onCatch }) => {
       setCatchLoading(false);
     }, 2000);
 
-    setCatchStatus(Math.random() < 1);
+    setCatchStatus(Math.random() < 0.5);
   };
 
   const savePokemon = () => {
     if (nickname === "") {
-      toast.error("Nickname is empty. Fill the field and try again!");
+      toast.error("Nickname is empty, fill the field and try again!");
 
       return;
     } else {
       if (myPokemon.find((item) => item.nickname === nickname)) {
-        toast.error(`${nickname} already exist. Please try other name!`);
+        toast.error(`${nickname} already exist, please try other name!`);
 
         return;
       } else {
@@ -75,7 +75,7 @@ const PokeCatch = ({ pokemon, onClose, onCatch }) => {
               {catchLoading ? (
                 <div className="flex items-center justify-center flex-col">
                   <img
-                    src="/images/poke-ball-icon.svg"
+                    src="images/poke-ball-icon.svg"
                     alt="header-icon"
                     className="w-24 animate-spin mb-5"
                   />

@@ -19,7 +19,7 @@ const PokeDetailContent = ({ loading, pokemon, nickname, origin, onClose, onCatc
               <>
                 <div className="py-32 flex justify-center">
                   <img
-                    src="/images/poke-ball-icon.svg"
+                    src="images/poke-ball-icon.svg"
                     alt="header-icon"
                     className="w-7 animate-spin"
                   />
@@ -75,7 +75,7 @@ const PokeDetailContent = ({ loading, pokemon, nickname, origin, onClose, onCatc
                                 className={`m-2 bg-poke-green px-3 py-1 rounded-full flex bg-opacity-90 bg-type-${type.type.name}`}
                               >
                                 <img
-                                  src={`/icons/${type.type.name}.svg`}
+                                  src={`icons/${type.type.name}.svg`}
                                   alt={type.type.name}
                                   className="w-3"
                                 ></img>

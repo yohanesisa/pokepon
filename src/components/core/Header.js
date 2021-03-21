@@ -9,7 +9,7 @@ const Header = () => {
       {location.pathname !== "/" && (
         <header className="container p-5">
           <div className="bg-white rounded-full p-3 flex items-center">
-            <img src="/images/poke-ball-icon.svg" alt="header-icon" className="w-7" />
+            <img src="images/poke-ball-icon.svg" alt="header-icon" className="w-7" />
             <h3 className="ml-2 mr-auto">Pokepon</h3>
             <div
               className={
