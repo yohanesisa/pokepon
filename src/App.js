@@ -25,7 +25,7 @@ function App() {
         <div
           className="App bg-auto bg-center bg-repeat bg-fixed"
           style={{
-            backgroundImage: `url("/images/poke-ball-seamless-bg.jpg")`,
+            backgroundImage: `url("images/poke-ball-seamless-bg.jpg")`,
           }}
         >
           <Toaster />

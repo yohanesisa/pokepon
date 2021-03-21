@@ -32,7 +32,7 @@ const PokeDetailContent = ({ loading, pokemon, nickname, origin, onClose, onCatc
                     <div
                       className={`bg-opacity-80 bg-type-${pokemon.pokemon.types[0].type.name} bg-contain`}
                       style={{
-                        backgroundImage: `url("/images/poke-ball-transparent-bg.png")`,
+                        backgroundImage: `url("images/poke-ball-transparent-bg.png")`,
                       }}
                     >
                       <div className="p-5 pb-3 flex items-center justify-between">
