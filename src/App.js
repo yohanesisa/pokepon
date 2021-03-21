@@ -1,5 +1,5 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
 import { MyPokemonProvider } from "./contexts/MyPokemonContext";

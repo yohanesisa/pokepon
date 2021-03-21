@@ -1,6 +1,6 @@
 {
-  "homepage": "http://yohanesisa.github.io/pokemon-gashapon",
-  "name": "pokemon-gashapon",
+  "homepage": "http://yohanesisa.github.io/pokepon",
+  "name": "pokepon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

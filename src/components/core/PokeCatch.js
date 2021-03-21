@@ -13,7 +13,7 @@ const PokeCatch = ({ pokemon, onClose, onCatch }) => {
 
     setTimeout(() => {
       setCatchLoading(false);
-    }, 0);
+    }, 3000);
   }, []);
 
   const catchPokemon = () => {
@@ -22,7 +22,7 @@ const PokeCatch = ({ pokemon, onClose, onCatch }) => {
       setCatchLoading(false);
     }, 2000);
 
-    setCatchStatus(Math.random() < 1);
+    setCatchStatus(Math.random() < 0.5);
   };
 
   const savePokemon = () => {
