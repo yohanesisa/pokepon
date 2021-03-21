@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/pokepon/static/css/main.b3b40603.chunk.css",
-    "main.js": "/pokepon/static/js/main.fa2e377f.chunk.js",
-    "main.js.map": "/pokepon/static/js/main.fa2e377f.chunk.js.map",
-    "runtime-main.js": "/pokepon/static/js/runtime-main.b6106c25.js",
-    "runtime-main.js.map": "/pokepon/static/js/runtime-main.b6106c25.js.map",
-    "static/js/2.09fe6133.chunk.js": "/pokepon/static/js/2.09fe6133.chunk.js",
-    "static/js/2.09fe6133.chunk.js.map": "/pokepon/static/js/2.09fe6133.chunk.js.map",
-    "static/js/3.2adb8c1e.chunk.js": "/pokepon/static/js/3.2adb8c1e.chunk.js",
-    "static/js/3.2adb8c1e.chunk.js.map": "/pokepon/static/js/3.2adb8c1e.chunk.js.map",
-    "index.html": "/pokepon/index.html",
-    "static/css/main.b3b40603.chunk.css.map": "/pokepon/static/css/main.b3b40603.chunk.css.map",
-    "static/js/2.09fe6133.chunk.js.LICENSE.txt": "/pokepon/static/js/2.09fe6133.chunk.js.LICENSE.txt"
+    "main.css": "./static/css/main.b3b40603.chunk.css",
+    "main.js": "./static/js/main.48b4b85b.chunk.js",
+    "main.js.map": "./static/js/main.48b4b85b.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.b01554c0.js",
+    "runtime-main.js.map": "./static/js/runtime-main.b01554c0.js.map",
+    "static/js/2.09fe6133.chunk.js": "./static/js/2.09fe6133.chunk.js",
+    "static/js/2.09fe6133.chunk.js.map": "./static/js/2.09fe6133.chunk.js.map",
+    "static/js/3.2adb8c1e.chunk.js": "./static/js/3.2adb8c1e.chunk.js",
+    "static/js/3.2adb8c1e.chunk.js.map": "./static/js/3.2adb8c1e.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.b3b40603.chunk.css.map": "./static/css/main.b3b40603.chunk.css.map",
+    "static/js/2.09fe6133.chunk.js.LICENSE.txt": "./static/js/2.09fe6133.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b6106c25.js",
+    "static/js/runtime-main.b01554c0.js",
     "static/js/2.09fe6133.chunk.js",
     "static/css/main.b3b40603.chunk.css",
-    "static/js/main.fa2e377f.chunk.js"
+    "static/js/main.48b4b85b.chunk.js"
   ]
 }
