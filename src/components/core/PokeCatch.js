@@ -126,7 +126,7 @@ const PokeCatch = ({ pokemon, onClose, onCatch }) => {
                   <input
                     type="text"
                     placeholder="Write a nickname..."
-                    className="my-7 border-b-2 border-poke-red"
+                    className="my-7 rounded-none border-b-2 border-poke-red"
                     onChange={(e) => setNickname(e.target.value)}
                   />
                   <div className="text-center">

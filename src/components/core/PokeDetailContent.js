@@ -30,7 +30,7 @@ const PokeDetailContent = ({ loading, pokemon, nickname, origin, onClose, onCatc
                 {pokemon ? (
                   <>
                     <div
-                      className={`bg-opacity-80 bg-type-${pokemon.pokemon.types[0].type.name} bg-contain`}
+                      className={`bg-opacity-80 rounded-2xl bg-type-${pokemon.pokemon.types[0].type.name} bg-contain`}
                       style={{
                         backgroundImage: `url("images/poke-ball-transparent-bg.png")`,
                       }}
