@@ -52,7 +52,7 @@ const PokeRelease = ({ pokemon, nickname, onClose, onRelease }) => {
                 </div>
                 <h4 className="mb-1 text-gray-500">Are you sure?</h4>
                 <p className="text-center">
-                  You're gonna release{" "}
+                  You're about to release{" "}
                   <span className="capitalize">
                     {nickname
                       ? nickname
