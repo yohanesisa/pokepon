@@ -3,9 +3,6 @@
 
 ![screenshoots of app](https://i.imgur.com/zvVHlZC.png)
 
-
-This project is a assessment project and part of my application process for a software engineer position at a e-commerce company in Indonesia.
-
 A simple pokedex that provide list of pokemons and its profiles such as types, about, and moves.
 You can catch pokemon with 50% success rate, and add it to your pokemon collections.
 
